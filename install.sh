@@ -7,7 +7,6 @@ cd $HOME/Downloads/_cloned-repos
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-cd ..
 
 # First install Oh-My-Zsh
 echo "### Installing..."
@@ -16,12 +15,12 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 echo "### First step done"
 echo "### Installing Required Packages"
-paru -S python ffmpeg pulseaudio pulseaudio-alsa alsa-utils dunst xclip scrot \
-thunar thunar-archive-plugin thunar-volman ffmpegthumbnailer tumbler w3m      \
-viewnior mpv neofetch htop xsettingsd picom-jonaburg-git rofi rsync firefox   \
-ranger python-pip noto-fonts-emoji-git noto-fonts-cjk-vf python-pillow-git    \
-exa bat file-roller geany geany-plugins gvfs gvfs-mtp htop kitty wal-git      \
-xwallpaper lxappearance
+paru -S python ffmpeg pulseaudio pulseaudio-alsa alsa-utils dunst xclip scrot  \
+thunar thunar-archive-plugin thunar-volman ffmpegthumbnailer tumbler w3m       \
+viewnior mpv neofetch htop xsettingsd picom-jonaburg-git rofi rsync firefox    \
+ranger python-pip noto-fonts-emoji noto-fonts-cjk python-pillow-git xwallpaper \
+exa bat file-roller geany geany-plugins gvfs gvfs-mtp htop kitty wal-git       \
+lxappearance
 
 echo "### Second step done"
 echo "### Installing Oh-My-Zsh Plugins"
@@ -39,19 +38,22 @@ cd Hypr
 make clear && make release
 
 echo "### Copying files..."
+cd $HOME/Downloads/_cloned-repos/Hypr
 sudo cp ./build/Hypr /usr/bin
 sudo cp ./example/hypr.desktop /usr/share/xsessions
 
 # Syncing my Dotfiles to ~/
 echo "### Sync Dotfiles"
+cd $HOME/dotfiles/
 rsync -avxHAXP --exclude '.git*' .* ~/
 
-# echo "### Copying Icons
-# pushd ~/.icons/ && \
-#     tar -xJf Papirus-Custom.tar.xz && tar -xJf Papirus-Dark-Custom.tar.xz && \
-#     sudo ln -vs ~/.icons/Papirus-Custom /usr/share/icons/
-#     sudo ln -vs ~/.icons/Papirus-Dark-Custom /usr/share/icons/
-# popd
+echo "### Copying Icons
+pushd ~/.icons/ && \
+    tar -xJf Papirus-Custom.tar.xz && tar -xJf Papirus-Dark-Custom.tar.xz && \
+    sudo ln -vs ~/.icons/Papirus-Custom /usr/share/icons/
+    sudo ln -vs ~/.icons/Papirus-Dark-Custom /usr/share/icons/
+    rm -rf *.tar.xz
+popd
 
 echo "### Refresh Fonts
 fc-cache -rv
