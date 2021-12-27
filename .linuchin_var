@@ -1,0 +1,13 @@
+
+# ****************** #
+# Notifier directory #
+# ****************** #
+NOTIFIER="$HOME/.scripts/notify/notify-send.sh"
+
+# ****************** #
+# Power Menu Command #
+# ****************** #
+POWEROFF="poweroff"
+REBOOT="reboot"
+LOCK="dm-tool lock"
+SLEEP="suspend"
