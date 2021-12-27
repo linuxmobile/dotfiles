@@ -20,7 +20,7 @@ thunar thunar-archive-plugin thunar-volman ffmpegthumbnailer tumbler w3m       \
 viewnior mpv neofetch htop xsettingsd picom-jonaburg-git rofi rsync firefox    \
 ranger python-pip noto-fonts-emoji noto-fonts-cjk python-pillow-git xwallpaper \
 exa bat file-roller geany geany-plugins gvfs gvfs-mtp htop kitty wal-git       \
-lxappearance pavucontrol nerd-fonts-complete polybar
+lxappearance pavucontrol nerd-fonts-complete polybar pulseaudio-nextsink
 
 echo "### Second step done"
 echo "### Installing Oh-My-Zsh Plugins"
