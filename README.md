@@ -15,7 +15,7 @@
 ## Este es mi actual desktop
 
 
-<img src='.misc/Archlinux%20Dotfiles%20🌌%20_%20%20🎴%20Little%20Showcase.gif
+<img src='.misc/hyprwm.gif
 '>
 
 
