@@ -15,8 +15,7 @@
 ## Este es mi actual desktop
 
 
-<img src='.misc/hyprwm.gif
-'>
+<img src='.misc/hyprwm.gif'>
 
 
 
