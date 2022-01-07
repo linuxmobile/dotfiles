@@ -15,7 +15,9 @@
 ## Este es mi actual desktop
 
 
-[![HYPRwm](https://i.imgur.com/ePgG6Wl.png)](https://www.youtube.com/embed/8RDsBZiNLTA)
+<img src='.misc/Archlinux Dotfiles 🌌 _ 🎴 Little Showcase.gif
+'>
+
 
 
 ## 🌸 Setup
