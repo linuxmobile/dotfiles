@@ -14,9 +14,9 @@
 
 ## Este es mi actual desktop
 
-<div class="video">
-<iframe src="https://www.youtube.com/embed/8RDsBZiNLTA" frameborder="0" allowfullscreen></iframe>
-</div>
+
+[![HYPRwm](https://i.imgur.com/ePgG6Wl.png)](https://www.youtube.com/embed/8RDsBZiNLTA)
+
 
 ## 🌸 Setup
 
